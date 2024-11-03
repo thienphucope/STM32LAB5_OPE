@@ -11,9 +11,9 @@ d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cube
 d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memset.o)
                               d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o (memset)
 d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-snprintf.o)
-                              ./Core/Inc/uart_communication_fsm.o (snprintf)
+                              ./Core/Src/uart_communication_fsm.o (snprintf)
 d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-strlen.o)
-                              ./Core/Inc/uart_communication_fsm.o (strlen)
+                              ./Core/Src/uart_communication_fsm.o (strlen)
 d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-svfprintf.o)
                               d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-snprintf.o) (_svfprintf_r)
 d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
@@ -50,7 +50,7 @@ __lock___arc4random_mutex
                     0x1               d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-lock.o)
 command_data        0x1e              ./Core/Src/command_parser_fsm.o
 errno               0x4               d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-reent.o)
-response_buffer     0x1e              ./Core/Inc/uart_communication_fsm.o
+response_buffer     0x1e              ./Core/Src/uart_communication_fsm.o
 uwTick              0x4               ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
 pFlash              0x20              ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
 __lock___env_recursive_mutex
@@ -83,76 +83,6 @@ Discarded input sections
  .ARM.exidx     0x0000000000000000       0x10 d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
  .ARM.attributes
                 0x0000000000000000       0x1b d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .group         0x0000000000000000        0xc ./Core/Inc/uart_communication_fsm.o
- .text          0x0000000000000000        0x0 ./Core/Inc/uart_communication_fsm.o
- .data          0x0000000000000000        0x0 ./Core/Inc/uart_communication_fsm.o
- .bss           0x0000000000000000        0x0 ./Core/Inc/uart_communication_fsm.o
  .group         0x0000000000000000        0xc ./Core/Src/command_parser_fsm.o
  .group         0x0000000000000000        0xc ./Core/Src/command_parser_fsm.o
  .group         0x0000000000000000        0xc ./Core/Src/command_parser_fsm.o
@@ -223,67 +153,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Core/Src/command_parser_fsm.o
  .data          0x0000000000000000        0x0 ./Core/Src/command_parser_fsm.o
  .bss           0x0000000000000000        0x0 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0xa9c ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x22 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x18 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x3c ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x34 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x174 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x16 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x43 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x34 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x10 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x58 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x71 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x1c ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x12a ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x10 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x35 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x20 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x1c ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x10 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x10 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x6a ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x1c ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x52 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x22 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x10 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x40 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0xd5 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x1c ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x3d ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x16 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x145 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x21b ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x2e ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x22 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x103 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x1df ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x1c ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x22 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0xd23 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000     0xde75 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x6d ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000     0x34a2 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x5bc ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x1b7 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x1cb ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x114 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x1b2 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x27 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x12f ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x1bc ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x34 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x3c ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x57 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x46a ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x1b5 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x87 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x183 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x140 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000      0x28e ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x69 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x0000000000000000       0x10 ./Core/Src/command_parser_fsm.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
@@ -359,20 +228,16 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x2e ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x22 ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x22 ./Core/Src/main.o
- .debug_macro   0x0000000000000000       0x8e ./Core/Src/main.o
- .debug_macro   0x0000000000000000       0x51 ./Core/Src/main.o
  .debug_macro   0x0000000000000000      0x103 ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x6a ./Core/Src/main.o
  .debug_macro   0x0000000000000000      0x1df ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x22 ./Core/Src/main.o
- .debug_macro   0x0000000000000000       0xc3 ./Core/Src/main.o
  .debug_macro   0x0000000000000000      0xd23 ./Core/Src/main.o
  .debug_macro   0x0000000000000000     0xde75 ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x6d ./Core/Src/main.o
  .debug_macro   0x0000000000000000     0x34a2 ./Core/Src/main.o
  .debug_macro   0x0000000000000000      0x174 ./Core/Src/main.o
- .debug_macro   0x0000000000000000       0x5c ./Core/Src/main.o
  .debug_macro   0x0000000000000000      0x5bc ./Core/Src/main.o
  .debug_macro   0x0000000000000000      0x1b7 ./Core/Src/main.o
  .debug_macro   0x0000000000000000      0x1cb ./Core/Src/main.o
@@ -392,12 +257,10 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x28e ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x10 ./Core/Src/main.o
- .debug_macro   0x0000000000000000       0x52 ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x18 ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x3c ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x34 ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x35 ./Core/Src/main.o
- .debug_macro   0x0000000000000000      0x333 ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x10 ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x16 ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x43 ./Core/Src/main.o
@@ -836,6 +699,143 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x140 ./Core/Src/system_stm32f1xx.o
  .debug_macro   0x0000000000000000      0x28e ./Core/Src/system_stm32f1xx.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/system_stm32f1xx.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/uart_communication_fsm.o
+ .text          0x0000000000000000        0x0 ./Core/Src/uart_communication_fsm.o
+ .data          0x0000000000000000        0x0 ./Core/Src/uart_communication_fsm.o
+ .bss           0x0000000000000000        0x0 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0xa9c ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x21b ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x2e ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x8e ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x51 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x103 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x6a ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x1df ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0xc3 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0xd23 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000     0xde75 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x6d ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000     0x34a2 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x174 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x5c ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x5bc ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x1b7 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x1cb ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x114 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x1b2 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x27 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x12f ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x1bc ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x3c ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x57 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x46a ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x1b5 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x87 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x183 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x140 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x28e ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x69 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x52 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x18 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x3c ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x43 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x58 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x71 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x12a ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x333 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x35 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x20 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x52 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x40 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0xd5 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x3d ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/uart_communication_fsm.o
+ .debug_macro   0x0000000000000000      0x145 ./Core/Src/uart_communication_fsm.o
  .text          0x0000000000000000       0x14 ./Core/Startup/startup_stm32f103c6ux.o
  .data          0x0000000000000000        0x0 ./Core/Startup/startup_stm32f103c6ux.o
  .bss           0x0000000000000000        0x0 ./Core/Startup/startup_stm32f103c6ux.o
@@ -2693,7 +2693,6 @@ Linker script and memory map
 LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crti.o
 LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
 LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
-LOAD ./Core/Inc/uart_communication_fsm.o
 LOAD ./Core/Src/command_parser_fsm.o
 LOAD ./Core/Src/main.o
 LOAD ./Core/Src/stm32f1xx_hal_msp.o
@@ -2701,6 +2700,7 @@ LOAD ./Core/Src/stm32f1xx_it.o
 LOAD ./Core/Src/syscalls.o
 LOAD ./Core/Src/sysmem.o
 LOAD ./Core/Src/system_stm32f1xx.o
+LOAD ./Core/Src/uart_communication_fsm.o
 LOAD ./Core/Startup/startup_stm32f103c6ux.o
 LOAD ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
 LOAD ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
@@ -2756,79 +2756,79 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
  .text          0x000000000800014c       0x10 d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-strlen.o)
                 0x000000000800014c                strlen
  *(.text*)
- .text.uart_communication_fsm
-                0x000000000800015c      0x15c ./Core/Inc/uart_communication_fsm.o
-                0x000000000800015c                uart_communication_fsm
  .text.HAL_UART_RxCpltCallback
-                0x00000000080002b8       0x68 ./Core/Src/command_parser_fsm.o
-                0x00000000080002b8                HAL_UART_RxCpltCallback
+                0x000000000800015c       0x68 ./Core/Src/command_parser_fsm.o
+                0x000000000800015c                HAL_UART_RxCpltCallback
  .text.string_compare
-                0x0000000008000320       0x6e ./Core/Src/command_parser_fsm.o
-                0x0000000008000320                string_compare
- *fill*         0x000000000800038e        0x2 
+                0x00000000080001c4       0x6e ./Core/Src/command_parser_fsm.o
+                0x00000000080001c4                string_compare
+ *fill*         0x0000000008000232        0x2 
  .text.command_parser_fsm
-                0x0000000008000390      0x10c ./Core/Src/command_parser_fsm.o
-                0x0000000008000390                command_parser_fsm
- .text.main     0x000000000800049c       0x48 ./Core/Src/main.o
-                0x000000000800049c                main
+                0x0000000008000234      0x10c ./Core/Src/command_parser_fsm.o
+                0x0000000008000234                command_parser_fsm
+ .text.main     0x0000000008000340       0x48 ./Core/Src/main.o
+                0x0000000008000340                main
  .text.SystemClock_Config
-                0x00000000080004e4       0xa0 ./Core/Src/main.o
-                0x00000000080004e4                SystemClock_Config
+                0x0000000008000388       0xa0 ./Core/Src/main.o
+                0x0000000008000388                SystemClock_Config
  .text.MX_ADC1_Init
-                0x0000000008000584       0x7c ./Core/Src/main.o
+                0x0000000008000428       0x7c ./Core/Src/main.o
  .text.MX_USART2_UART_Init
-                0x0000000008000600       0x54 ./Core/Src/main.o
+                0x00000000080004a4       0x54 ./Core/Src/main.o
  .text.MX_GPIO_Init
-                0x0000000008000654       0x64 ./Core/Src/main.o
+                0x00000000080004f8       0x64 ./Core/Src/main.o
  .text.Error_Handler
-                0x00000000080006b8        0xa ./Core/Src/main.o
-                0x00000000080006b8                Error_Handler
- *fill*         0x00000000080006c2        0x2 
+                0x000000000800055c        0xa ./Core/Src/main.o
+                0x000000000800055c                Error_Handler
+ *fill*         0x0000000008000566        0x2 
  .text.HAL_MspInit
-                0x00000000080006c4       0x64 ./Core/Src/stm32f1xx_hal_msp.o
-                0x00000000080006c4                HAL_MspInit
+                0x0000000008000568       0x64 ./Core/Src/stm32f1xx_hal_msp.o
+                0x0000000008000568                HAL_MspInit
  .text.HAL_ADC_MspInit
-                0x0000000008000728       0x78 ./Core/Src/stm32f1xx_hal_msp.o
-                0x0000000008000728                HAL_ADC_MspInit
+                0x00000000080005cc       0x78 ./Core/Src/stm32f1xx_hal_msp.o
+                0x00000000080005cc                HAL_ADC_MspInit
  .text.HAL_UART_MspInit
-                0x00000000080007a0       0xa4 ./Core/Src/stm32f1xx_hal_msp.o
-                0x00000000080007a0                HAL_UART_MspInit
+                0x0000000008000644       0xa4 ./Core/Src/stm32f1xx_hal_msp.o
+                0x0000000008000644                HAL_UART_MspInit
  .text.NMI_Handler
-                0x0000000008000844        0x6 ./Core/Src/stm32f1xx_it.o
-                0x0000000008000844                NMI_Handler
+                0x00000000080006e8        0x6 ./Core/Src/stm32f1xx_it.o
+                0x00000000080006e8                NMI_Handler
  .text.HardFault_Handler
-                0x000000000800084a        0x6 ./Core/Src/stm32f1xx_it.o
-                0x000000000800084a                HardFault_Handler
+                0x00000000080006ee        0x6 ./Core/Src/stm32f1xx_it.o
+                0x00000000080006ee                HardFault_Handler
  .text.MemManage_Handler
-                0x0000000008000850        0x6 ./Core/Src/stm32f1xx_it.o
-                0x0000000008000850                MemManage_Handler
+                0x00000000080006f4        0x6 ./Core/Src/stm32f1xx_it.o
+                0x00000000080006f4                MemManage_Handler
  .text.BusFault_Handler
-                0x0000000008000856        0x6 ./Core/Src/stm32f1xx_it.o
-                0x0000000008000856                BusFault_Handler
+                0x00000000080006fa        0x6 ./Core/Src/stm32f1xx_it.o
+                0x00000000080006fa                BusFault_Handler
  .text.UsageFault_Handler
-                0x000000000800085c        0x6 ./Core/Src/stm32f1xx_it.o
-                0x000000000800085c                UsageFault_Handler
+                0x0000000008000700        0x6 ./Core/Src/stm32f1xx_it.o
+                0x0000000008000700                UsageFault_Handler
  .text.SVC_Handler
-                0x0000000008000862        0xc ./Core/Src/stm32f1xx_it.o
-                0x0000000008000862                SVC_Handler
+                0x0000000008000706        0xc ./Core/Src/stm32f1xx_it.o
+                0x0000000008000706                SVC_Handler
  .text.DebugMon_Handler
-                0x000000000800086e        0xc ./Core/Src/stm32f1xx_it.o
-                0x000000000800086e                DebugMon_Handler
+                0x0000000008000712        0xc ./Core/Src/stm32f1xx_it.o
+                0x0000000008000712                DebugMon_Handler
  .text.PendSV_Handler
-                0x000000000800087a        0xc ./Core/Src/stm32f1xx_it.o
-                0x000000000800087a                PendSV_Handler
+                0x000000000800071e        0xc ./Core/Src/stm32f1xx_it.o
+                0x000000000800071e                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008000886        0xc ./Core/Src/stm32f1xx_it.o
-                0x0000000008000886                SysTick_Handler
- *fill*         0x0000000008000892        0x2 
+                0x000000000800072a        0xc ./Core/Src/stm32f1xx_it.o
+                0x000000000800072a                SysTick_Handler
+ *fill*         0x0000000008000736        0x2 
  .text.USART2_IRQHandler
-                0x0000000008000894       0x14 ./Core/Src/stm32f1xx_it.o
-                0x0000000008000894                USART2_IRQHandler
- .text._sbrk    0x00000000080008a8       0x6c ./Core/Src/sysmem.o
-                0x00000000080008a8                _sbrk
+                0x0000000008000738       0x14 ./Core/Src/stm32f1xx_it.o
+                0x0000000008000738                USART2_IRQHandler
+ .text._sbrk    0x000000000800074c       0x6c ./Core/Src/sysmem.o
+                0x000000000800074c                _sbrk
  .text.SystemInit
-                0x0000000008000914        0xc ./Core/Src/system_stm32f1xx.o
-                0x0000000008000914                SystemInit
+                0x00000000080007b8        0xc ./Core/Src/system_stm32f1xx.o
+                0x00000000080007b8                SystemInit
+ .text.uart_communication_fsm
+                0x00000000080007c4      0x15c ./Core/Src/uart_communication_fsm.o
+                0x00000000080007c4                uart_communication_fsm
  .text.Reset_Handler
                 0x0000000008000920       0x48 ./Core/Startup/startup_stm32f103c6ux.o
                 0x0000000008000920                Reset_Handler
@@ -3090,11 +3090,11 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
 .rodata         0x00000000080036ec       0x88
                 0x00000000080036ec                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x00000000080036ec       0x1d ./Core/Inc/uart_communication_fsm.o
- *fill*         0x0000000008003709        0x3 
- .rodata        0x000000000800370c        0x7 ./Core/Src/command_parser_fsm.o
+ .rodata        0x00000000080036ec        0x7 ./Core/Src/command_parser_fsm.o
+ *fill*         0x00000000080036f3        0x1 
+ .rodata        0x00000000080036f4       0x1d ./Core/Src/uart_communication_fsm.o
  *(.rodata*)
- *fill*         0x0000000008003713        0x1 
+ *fill*         0x0000000008003711        0x3 
  .rodata.AHBPrescTable
                 0x0000000008003714       0x10 ./Core/Src/system_stm32f1xx.o
                 0x0000000008003714                AHBPrescTable
@@ -3158,13 +3158,13 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
                 0x0000000020000000                _sdata = .
  *(.data)
  *(.data*)
- .data.ADC_value
-                0x0000000020000000        0x2 ./Core/Inc/uart_communication_fsm.o
-                0x0000000020000000                ADC_value
- *fill*         0x0000000020000002        0x2 
  .data.SystemCoreClock
-                0x0000000020000004        0x4 ./Core/Src/system_stm32f1xx.o
-                0x0000000020000004                SystemCoreClock
+                0x0000000020000000        0x4 ./Core/Src/system_stm32f1xx.o
+                0x0000000020000000                SystemCoreClock
+ .data.ADC_value
+                0x0000000020000004        0x2 ./Core/Src/uart_communication_fsm.o
+                0x0000000020000004                ADC_value
+ *fill*         0x0000000020000006        0x2 
  .data.uwTickPrio
                 0x0000000020000008        0x4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
                 0x0000000020000008                uwTickPrio
@@ -3192,33 +3192,33 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
  *(.bss)
  .bss           0x0000000020000074       0x1c d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.bss*)
- .bss.uart_state
-                0x0000000020000090        0x1 ./Core/Inc/uart_communication_fsm.o
-                0x0000000020000090                uart_state
- *fill*         0x0000000020000091        0x3 
- .bss.timeout_counter
-                0x0000000020000094        0x4 ./Core/Inc/uart_communication_fsm.o
-                0x0000000020000094                timeout_counter
- .bss.temp      0x0000000020000098        0x1 ./Core/Src/command_parser_fsm.o
-                0x0000000020000098                temp
+ .bss.temp      0x0000000020000090        0x1 ./Core/Src/command_parser_fsm.o
+                0x0000000020000090                temp
  .bss.index_buffer
-                0x0000000020000099        0x1 ./Core/Src/command_parser_fsm.o
-                0x0000000020000099                index_buffer
+                0x0000000020000091        0x1 ./Core/Src/command_parser_fsm.o
+                0x0000000020000091                index_buffer
  .bss.buffer_flag
-                0x000000002000009a        0x1 ./Core/Src/command_parser_fsm.o
-                0x000000002000009a                buffer_flag
+                0x0000000020000092        0x1 ./Core/Src/command_parser_fsm.o
+                0x0000000020000092                buffer_flag
  .bss.command_parser_state
-                0x000000002000009b        0x1 ./Core/Src/command_parser_fsm.o
-                0x000000002000009b                command_parser_state
+                0x0000000020000093        0x1 ./Core/Src/command_parser_fsm.o
+                0x0000000020000093                command_parser_state
  .bss.command_flag
-                0x000000002000009c        0x1 ./Core/Src/command_parser_fsm.o
-                0x000000002000009c                command_flag
+                0x0000000020000094        0x1 ./Core/Src/command_parser_fsm.o
+                0x0000000020000094                command_flag
  .bss.command_index
-                0x000000002000009d        0x1 ./Core/Src/command_parser_fsm.o
-                0x000000002000009d                command_index
- *fill*         0x000000002000009e        0x2 
+                0x0000000020000095        0x1 ./Core/Src/command_parser_fsm.o
+                0x0000000020000095                command_index
+ *fill*         0x0000000020000096        0x2 
  .bss.__sbrk_heap_end
-                0x00000000200000a0        0x4 ./Core/Src/sysmem.o
+                0x0000000020000098        0x4 ./Core/Src/sysmem.o
+ .bss.uart_state
+                0x000000002000009c        0x1 ./Core/Src/uart_communication_fsm.o
+                0x000000002000009c                uart_state
+ *fill*         0x000000002000009d        0x3 
+ .bss.timeout_counter
+                0x00000000200000a0        0x4 ./Core/Src/uart_communication_fsm.o
+                0x00000000200000a0                timeout_counter
  .bss.__malloc_free_list
                 0x00000000200000a4        0x4 d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
                 0x00000000200000a4                __malloc_free_list
@@ -3226,16 +3226,16 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
                 0x00000000200000a8        0x4 d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
                 0x00000000200000a8                __malloc_sbrk_start
  *(COMMON)
- COMMON         0x00000000200000ac       0x1e ./Core/Inc/uart_communication_fsm.o
-                0x00000000200000ac                response_buffer
- *fill*         0x00000000200000ca        0x2 
- COMMON         0x00000000200000cc       0x3e ./Core/Src/command_parser_fsm.o
-                0x00000000200000cc                command_data
-                0x00000000200000ec                buffer
- *fill*         0x000000002000010a        0x2 
- COMMON         0x000000002000010c       0x78 ./Core/Src/main.o
-                0x000000002000010c                hadc1
-                0x000000002000013c                huart2
+ COMMON         0x00000000200000ac       0x3e ./Core/Src/command_parser_fsm.o
+                0x00000000200000ac                command_data
+                0x00000000200000cc                buffer
+ *fill*         0x00000000200000ea        0x2 
+ COMMON         0x00000000200000ec       0x78 ./Core/Src/main.o
+                0x00000000200000ec                hadc1
+                0x000000002000011c                huart2
+ COMMON         0x0000000020000164       0x1e ./Core/Src/uart_communication_fsm.o
+                0x0000000020000164                response_buffer
+ *fill*         0x0000000020000182        0x2 
  COMMON         0x0000000020000184        0x4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
                 0x0000000020000184                uwTick
  COMMON         0x0000000020000188        0x4 d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-reent.o)
@@ -3279,19 +3279,19 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
  .ARM.attributes
                 0x000000000000001d       0x2d d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
  .ARM.attributes
-                0x000000000000004a       0x2d ./Core/Inc/uart_communication_fsm.o
+                0x000000000000004a       0x2d ./Core/Src/command_parser_fsm.o
  .ARM.attributes
-                0x0000000000000077       0x2d ./Core/Src/command_parser_fsm.o
+                0x0000000000000077       0x2d ./Core/Src/main.o
  .ARM.attributes
-                0x00000000000000a4       0x2d ./Core/Src/main.o
+                0x00000000000000a4       0x2d ./Core/Src/stm32f1xx_hal_msp.o
  .ARM.attributes
-                0x00000000000000d1       0x2d ./Core/Src/stm32f1xx_hal_msp.o
+                0x00000000000000d1       0x2d ./Core/Src/stm32f1xx_it.o
  .ARM.attributes
-                0x00000000000000fe       0x2d ./Core/Src/stm32f1xx_it.o
+                0x00000000000000fe       0x2d ./Core/Src/sysmem.o
  .ARM.attributes
-                0x000000000000012b       0x2d ./Core/Src/sysmem.o
+                0x000000000000012b       0x2d ./Core/Src/system_stm32f1xx.o
  .ARM.attributes
-                0x0000000000000158       0x2d ./Core/Src/system_stm32f1xx.o
+                0x0000000000000158       0x2d ./Core/Src/uart_communication_fsm.o
  .ARM.attributes
                 0x0000000000000185       0x21 ./Core/Startup/startup_stm32f103c6ux.o
  .ARM.attributes
@@ -3357,13 +3357,13 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
 LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a
 
 .debug_info     0x0000000000000000     0xcb20
- .debug_info    0x0000000000000000     0x11ee ./Core/Inc/uart_communication_fsm.o
- .debug_info    0x00000000000011ee     0x1298 ./Core/Src/command_parser_fsm.o
- .debug_info    0x0000000000002486     0x15c4 ./Core/Src/main.o
- .debug_info    0x0000000000003a4a      0xcf6 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_info    0x0000000000004740      0x913 ./Core/Src/stm32f1xx_it.o
- .debug_info    0x0000000000005053      0xa25 ./Core/Src/sysmem.o
- .debug_info    0x0000000000005a78      0x2be ./Core/Src/system_stm32f1xx.o
+ .debug_info    0x0000000000000000     0x1298 ./Core/Src/command_parser_fsm.o
+ .debug_info    0x0000000000001298     0x15c4 ./Core/Src/main.o
+ .debug_info    0x000000000000285c      0xcf6 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_info    0x0000000000003552      0x913 ./Core/Src/stm32f1xx_it.o
+ .debug_info    0x0000000000003e65      0xa25 ./Core/Src/sysmem.o
+ .debug_info    0x000000000000488a      0x2be ./Core/Src/system_stm32f1xx.o
+ .debug_info    0x0000000000004b48     0x11ee ./Core/Src/uart_communication_fsm.o
  .debug_info    0x0000000000005d36       0x22 ./Core/Startup/startup_stm32f103c6ux.o
  .debug_info    0x0000000000005d58      0x74c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_info    0x00000000000064a4      0xd52 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
@@ -3375,13 +3375,13 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
  .debug_info    0x00000000000099f1     0x312f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
 
 .debug_abbrev   0x0000000000000000     0x1f0e
- .debug_abbrev  0x0000000000000000      0x1d7 ./Core/Inc/uart_communication_fsm.o
- .debug_abbrev  0x00000000000001d7      0x24b ./Core/Src/command_parser_fsm.o
- .debug_abbrev  0x0000000000000422      0x2a8 ./Core/Src/main.o
- .debug_abbrev  0x00000000000006ca      0x1b5 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_abbrev  0x000000000000087f      0x174 ./Core/Src/stm32f1xx_it.o
- .debug_abbrev  0x00000000000009f3      0x1bf ./Core/Src/sysmem.o
- .debug_abbrev  0x0000000000000bb2      0x14e ./Core/Src/system_stm32f1xx.o
+ .debug_abbrev  0x0000000000000000      0x24b ./Core/Src/command_parser_fsm.o
+ .debug_abbrev  0x000000000000024b      0x2a8 ./Core/Src/main.o
+ .debug_abbrev  0x00000000000004f3      0x1b5 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_abbrev  0x00000000000006a8      0x174 ./Core/Src/stm32f1xx_it.o
+ .debug_abbrev  0x000000000000081c      0x1bf ./Core/Src/sysmem.o
+ .debug_abbrev  0x00000000000009db      0x14e ./Core/Src/system_stm32f1xx.o
+ .debug_abbrev  0x0000000000000b29      0x1d7 ./Core/Src/uart_communication_fsm.o
  .debug_abbrev  0x0000000000000d00       0x12 ./Core/Startup/startup_stm32f103c6ux.o
  .debug_abbrev  0x0000000000000d12      0x1ed ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_abbrev  0x0000000000000eff      0x1fb ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
@@ -3394,19 +3394,19 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
 
 .debug_aranges  0x0000000000000000      0x820
  .debug_aranges
-                0x0000000000000000       0x20 ./Core/Inc/uart_communication_fsm.o
+                0x0000000000000000       0x30 ./Core/Src/command_parser_fsm.o
  .debug_aranges
-                0x0000000000000020       0x30 ./Core/Src/command_parser_fsm.o
+                0x0000000000000030       0x48 ./Core/Src/main.o
  .debug_aranges
-                0x0000000000000050       0x48 ./Core/Src/main.o
+                0x0000000000000078       0x40 ./Core/Src/stm32f1xx_hal_msp.o
  .debug_aranges
-                0x0000000000000098       0x40 ./Core/Src/stm32f1xx_hal_msp.o
+                0x00000000000000b8       0x68 ./Core/Src/stm32f1xx_it.o
  .debug_aranges
-                0x00000000000000d8       0x68 ./Core/Src/stm32f1xx_it.o
+                0x0000000000000120       0x20 ./Core/Src/sysmem.o
  .debug_aranges
-                0x0000000000000140       0x20 ./Core/Src/sysmem.o
+                0x0000000000000140       0x28 ./Core/Src/system_stm32f1xx.o
  .debug_aranges
-                0x0000000000000160       0x28 ./Core/Src/system_stm32f1xx.o
+                0x0000000000000168       0x20 ./Core/Src/uart_communication_fsm.o
  .debug_aranges
                 0x0000000000000188       0x28 ./Core/Startup/startup_stm32f103c6ux.o
  .debug_aranges
@@ -3427,13 +3427,13 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
                 0x0000000000000618      0x208 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
 
 .debug_ranges   0x0000000000000000      0x770
- .debug_ranges  0x0000000000000000       0x10 ./Core/Inc/uart_communication_fsm.o
- .debug_ranges  0x0000000000000010       0x38 ./Core/Src/command_parser_fsm.o
- .debug_ranges  0x0000000000000048       0x38 ./Core/Src/main.o
- .debug_ranges  0x0000000000000080       0x30 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_ranges  0x00000000000000b0       0x58 ./Core/Src/stm32f1xx_it.o
- .debug_ranges  0x0000000000000108       0x10 ./Core/Src/sysmem.o
- .debug_ranges  0x0000000000000118       0x18 ./Core/Src/system_stm32f1xx.o
+ .debug_ranges  0x0000000000000000       0x38 ./Core/Src/command_parser_fsm.o
+ .debug_ranges  0x0000000000000038       0x38 ./Core/Src/main.o
+ .debug_ranges  0x0000000000000070       0x30 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_ranges  0x00000000000000a0       0x58 ./Core/Src/stm32f1xx_it.o
+ .debug_ranges  0x00000000000000f8       0x10 ./Core/Src/sysmem.o
+ .debug_ranges  0x0000000000000108       0x18 ./Core/Src/system_stm32f1xx.o
+ .debug_ranges  0x0000000000000120       0x10 ./Core/Src/uart_communication_fsm.o
  .debug_ranges  0x0000000000000130       0x20 ./Core/Startup/startup_stm32f103c6ux.o
  .debug_ranges  0x0000000000000150       0xd0 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_ranges  0x0000000000000220       0xe0 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
@@ -3445,89 +3445,89 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
  .debug_ranges  0x0000000000000548      0x228 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
 
 .debug_macro    0x0000000000000000    0x1818c
- .debug_macro   0x0000000000000000      0x358 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000000358      0xa9c ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000000df4      0x21b ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x000000000000100f       0x2e ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x000000000000103d       0x22 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x000000000000105f       0x22 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000001081       0x8e ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x000000000000110f       0x51 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000001160      0x103 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000001263       0x6a ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000012cd      0x1df ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000014ac       0x1c ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000014c8       0x22 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000014ea       0xc3 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000015ad      0xd23 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000022d0     0xde75 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000010145       0x6d ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000101b2     0x34a2 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000013654      0x174 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000137c8       0x5c ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000013824      0x5bc ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000013de0      0x1b7 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000013f97      0x1cb ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000014162      0x114 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000014276      0x1b2 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000014428       0x27 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x000000000001444f      0x12f ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x000000000001457e      0x1bc ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x000000000001473a       0x34 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x000000000001476e       0x3c ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000147aa       0x57 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000014801      0x46a ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000014c6b      0x1b5 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000014e20       0x87 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000014ea7      0x183 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x000000000001502a      0x140 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x000000000001516a      0x28e ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000153f8       0x69 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015461       0x10 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015471       0x52 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000154c3       0x18 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000154db       0x3c ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015517       0x34 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x000000000001554b       0x16 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015561       0x43 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000155a4       0x34 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000155d8       0x10 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000155e8       0x58 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015640       0x71 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000156b1       0x1c ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000156cd      0x12a ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x00000000000157f7      0x333 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015b2a       0x10 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015b3a       0x35 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015b6f       0x20 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015b8f       0x1c ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015bab       0x10 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015bbb       0x10 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015bcb       0x1c ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015be7       0x52 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015c39       0x22 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015c5b       0x10 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015c6b       0x40 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015cab       0xd5 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015d80       0x1c ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015d9c       0x3d ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015dd9       0x16 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015def      0x145 ./Core/Inc/uart_communication_fsm.o
- .debug_macro   0x0000000000015f34      0x348 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x000000000001627c       0x4c ./Core/Src/command_parser_fsm.o
- .debug_macro   0x00000000000162c8       0x94 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x000000000001635c       0x57 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x00000000000163b3      0x339 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x00000000000166ec       0xbd ./Core/Src/command_parser_fsm.o
- .debug_macro   0x00000000000167a9       0x56 ./Core/Src/command_parser_fsm.o
- .debug_macro   0x00000000000167ff      0x360 ./Core/Src/main.o
- .debug_macro   0x0000000000016b5f       0x16 ./Core/Src/main.o
- .debug_macro   0x0000000000016b75       0x16 ./Core/Src/main.o
- .debug_macro   0x0000000000016b8b      0x1af ./Core/Src/stm32f1xx_hal_msp.o
- .debug_macro   0x0000000000016d3a      0x1b9 ./Core/Src/stm32f1xx_it.o
- .debug_macro   0x0000000000016ef3       0xff ./Core/Src/sysmem.o
- .debug_macro   0x0000000000016ff2      0x23b ./Core/Src/sysmem.o
- .debug_macro   0x000000000001722d      0x1a0 ./Core/Src/system_stm32f1xx.o
+ .debug_macro   0x0000000000000000      0x348 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000000348      0xa9c ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000000de4       0x22 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000000e06       0x4c ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000000e52       0x18 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000000e6a       0x94 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000000efe       0x3c ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000000f3a       0x34 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000000f6e      0x174 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000010e2       0x16 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000010f8       0x43 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x000000000000113b       0x57 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001192       0x34 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000011c6       0x10 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000011d6       0x58 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x000000000000122e       0x71 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x000000000000129f       0x1c ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000012bb      0x12a ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000013e5      0x339 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x000000000000171e       0x10 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x000000000000172e       0x35 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001763       0x20 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001783       0x1c ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x000000000000179f       0x10 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000017af       0x10 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000017bf       0x6a ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001829       0x1c ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001845       0x52 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001897       0x22 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000018b9       0x10 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000018c9       0x40 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001909       0xd5 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000019de       0x1c ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000019fa       0x3d ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001a37       0x16 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001a4d      0x145 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001b92      0x21b ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001dad       0x2e ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001ddb       0x22 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001dfd      0x103 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000001f00      0x1df ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000020df       0x1c ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000020fb       0x22 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x000000000000211d       0xbd ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000021da      0xd23 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000002efd     0xde75 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000010d72       0x6d ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000010ddf     0x34a2 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000014281       0x56 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000142d7      0x5bc ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000014893      0x1b7 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000014a4a      0x1cb ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000014c15      0x114 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000014d29      0x1b2 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000014edb       0x27 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000014f02      0x12f ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000015031      0x1bc ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000151ed       0x34 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000015221       0x3c ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x000000000001525d       0x57 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000152b4      0x46a ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x000000000001571e      0x1b5 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x00000000000158d3       0x87 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x000000000001595a      0x183 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000015add      0x140 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000015c1d      0x28e ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000015eab       0x69 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000015f14       0x10 ./Core/Src/command_parser_fsm.o
+ .debug_macro   0x0000000000015f24      0x360 ./Core/Src/main.o
+ .debug_macro   0x0000000000016284       0x8e ./Core/Src/main.o
+ .debug_macro   0x0000000000016312       0x51 ./Core/Src/main.o
+ .debug_macro   0x0000000000016363       0xc3 ./Core/Src/main.o
+ .debug_macro   0x0000000000016426       0x5c ./Core/Src/main.o
+ .debug_macro   0x0000000000016482       0x52 ./Core/Src/main.o
+ .debug_macro   0x00000000000164d4       0x16 ./Core/Src/main.o
+ .debug_macro   0x00000000000164ea      0x333 ./Core/Src/main.o
+ .debug_macro   0x000000000001681d       0x16 ./Core/Src/main.o
+ .debug_macro   0x0000000000016833      0x1af ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_macro   0x00000000000169e2      0x1b9 ./Core/Src/stm32f1xx_it.o
+ .debug_macro   0x0000000000016b9b       0xff ./Core/Src/sysmem.o
+ .debug_macro   0x0000000000016c9a      0x23b ./Core/Src/sysmem.o
+ .debug_macro   0x0000000000016ed5      0x1a0 ./Core/Src/system_stm32f1xx.o
+ .debug_macro   0x0000000000017075      0x358 ./Core/Src/uart_communication_fsm.o
  .debug_macro   0x00000000000173cd      0x1c4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_macro   0x0000000000017591      0x1bd ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
  .debug_macro   0x000000000001774e      0x1a0 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
@@ -3537,39 +3537,39 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
  .debug_macro   0x0000000000017e4b      0x1a0 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
  .debug_macro   0x0000000000017feb      0x1a1 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
 
-.debug_line     0x0000000000000000     0xc977
- .debug_line    0x0000000000000000      0xb0d ./Core/Inc/uart_communication_fsm.o
- .debug_line    0x0000000000000b0d      0xba3 ./Core/Src/command_parser_fsm.o
- .debug_line    0x00000000000016b0      0xbd2 ./Core/Src/main.o
- .debug_line    0x0000000000002282      0x8b2 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_line    0x0000000000002b34      0x8ef ./Core/Src/stm32f1xx_it.o
- .debug_line    0x0000000000003423      0x6d8 ./Core/Src/sysmem.o
- .debug_line    0x0000000000003afb      0x893 ./Core/Src/system_stm32f1xx.o
- .debug_line    0x000000000000438e       0x86 ./Core/Startup/startup_stm32f103c6ux.o
- .debug_line    0x0000000000004414      0xac0 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_line    0x0000000000004ed4     0x1145 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
- .debug_line    0x0000000000006019      0xca8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_line    0x0000000000006cc1      0xf19 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
- .debug_line    0x0000000000007bda      0xb43 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_line    0x000000000000871d      0xecc ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
- .debug_line    0x00000000000095e9      0xa07 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
- .debug_line    0x0000000000009ff0     0x2987 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
+.debug_line     0x0000000000000000     0xc983
+ .debug_line    0x0000000000000000      0xba3 ./Core/Src/command_parser_fsm.o
+ .debug_line    0x0000000000000ba3      0xbd2 ./Core/Src/main.o
+ .debug_line    0x0000000000001775      0x8b2 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_line    0x0000000000002027      0x8ef ./Core/Src/stm32f1xx_it.o
+ .debug_line    0x0000000000002916      0x6d8 ./Core/Src/sysmem.o
+ .debug_line    0x0000000000002fee      0x893 ./Core/Src/system_stm32f1xx.o
+ .debug_line    0x0000000000003881      0xb19 ./Core/Src/uart_communication_fsm.o
+ .debug_line    0x000000000000439a       0x86 ./Core/Startup/startup_stm32f103c6ux.o
+ .debug_line    0x0000000000004420      0xac0 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_line    0x0000000000004ee0     0x1145 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_line    0x0000000000006025      0xca8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_line    0x0000000000006ccd      0xf19 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
+ .debug_line    0x0000000000007be6      0xb43 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_line    0x0000000000008729      0xecc ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_line    0x00000000000095f5      0xa07 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
+ .debug_line    0x0000000000009ffc     0x2987 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
 
 .debug_str      0x0000000000000000    0x85802
- .debug_str     0x0000000000000000    0x83360 ./Core/Inc/uart_communication_fsm.o
-                                      0x837b1 (size before relaxing)
- .debug_str     0x0000000000083360       0xe0 ./Core/Src/command_parser_fsm.o
+ .debug_str     0x0000000000000000    0x83377 ./Core/Src/command_parser_fsm.o
                                       0x837c8 (size before relaxing)
- .debug_str     0x0000000000083440      0x2f3 ./Core/Src/main.o
+ .debug_str     0x0000000000083377      0x327 ./Core/Src/main.o
                                       0x83a17 (size before relaxing)
- .debug_str     0x0000000000083733      0x2cf ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_str     0x000000000008369e      0x2cf ./Core/Src/stm32f1xx_hal_msp.o
                                       0x7f923 (size before relaxing)
- .debug_str     0x0000000000083a02       0xcf ./Core/Src/stm32f1xx_it.o
+ .debug_str     0x000000000008396d       0xcf ./Core/Src/stm32f1xx_it.o
                                       0x7f623 (size before relaxing)
- .debug_str     0x0000000000083ad1      0x4e9 ./Core/Src/sysmem.o
+ .debug_str     0x0000000000083a3c      0x4e9 ./Core/Src/sysmem.o
                                        0x626c (size before relaxing)
- .debug_str     0x0000000000083fba       0x52 ./Core/Src/system_stm32f1xx.o
+ .debug_str     0x0000000000083f25       0x52 ./Core/Src/system_stm32f1xx.o
                                       0x7f08a (size before relaxing)
+ .debug_str     0x0000000000083f77       0x95 ./Core/Src/uart_communication_fsm.o
+                                      0x837b1 (size before relaxing)
  .debug_str     0x000000000008400c       0x36 ./Core/Startup/startup_stm32f103c6ux.o
                                          0x80 (size before relaxing)
  .debug_str     0x0000000000084042      0x304 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -3590,14 +3590,14 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
                                       0x7fadf (size before relaxing)
 
 .comment        0x0000000000000000       0x53
- .comment       0x0000000000000000       0x53 ./Core/Inc/uart_communication_fsm.o
+ .comment       0x0000000000000000       0x53 ./Core/Src/command_parser_fsm.o
                                          0x54 (size before relaxing)
- .comment       0x0000000000000053       0x54 ./Core/Src/command_parser_fsm.o
  .comment       0x0000000000000053       0x54 ./Core/Src/main.o
  .comment       0x0000000000000053       0x54 ./Core/Src/stm32f1xx_hal_msp.o
  .comment       0x0000000000000053       0x54 ./Core/Src/stm32f1xx_it.o
  .comment       0x0000000000000053       0x54 ./Core/Src/sysmem.o
  .comment       0x0000000000000053       0x54 ./Core/Src/system_stm32f1xx.o
+ .comment       0x0000000000000053       0x54 ./Core/Src/uart_communication_fsm.o
  .comment       0x0000000000000053       0x54 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .comment       0x0000000000000053       0x54 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
  .comment       0x0000000000000053       0x54 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
@@ -3608,13 +3608,13 @@ LOAD d:/documents/my 241/microprosessors and microcontroller/labs/stm32cube/stm3
  .comment       0x0000000000000053       0x54 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
 
 .debug_frame    0x0000000000000000     0x2300
- .debug_frame   0x0000000000000000       0x2c ./Core/Inc/uart_communication_fsm.o
- .debug_frame   0x000000000000002c       0x80 ./Core/Src/command_parser_fsm.o
- .debug_frame   0x00000000000000ac       0xcc ./Core/Src/main.o
- .debug_frame   0x0000000000000178       0xc8 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_frame   0x0000000000000240      0x120 ./Core/Src/stm32f1xx_it.o
- .debug_frame   0x0000000000000360       0x34 ./Core/Src/sysmem.o
- .debug_frame   0x0000000000000394       0x58 ./Core/Src/system_stm32f1xx.o
+ .debug_frame   0x0000000000000000       0x80 ./Core/Src/command_parser_fsm.o
+ .debug_frame   0x0000000000000080       0xcc ./Core/Src/main.o
+ .debug_frame   0x000000000000014c       0xc8 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_frame   0x0000000000000214      0x120 ./Core/Src/stm32f1xx_it.o
+ .debug_frame   0x0000000000000334       0x34 ./Core/Src/sysmem.o
+ .debug_frame   0x0000000000000368       0x58 ./Core/Src/system_stm32f1xx.o
+ .debug_frame   0x00000000000003c0       0x2c ./Core/Src/uart_communication_fsm.o
  .debug_frame   0x00000000000003ec      0x334 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_frame   0x0000000000000720      0x40c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
  .debug_frame   0x0000000000000b2c      0x428 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o

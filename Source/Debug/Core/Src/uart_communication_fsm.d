@@ -1,4 +1,4 @@
-Core/Inc/uart_communication_fsm.o: ../Core/Inc/uart_communication_fsm.c \
+Core/Src/uart_communication_fsm.o: ../Core/Src/uart_communication_fsm.c \
  ../Core/Inc/uart_communication_fsm.h ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
