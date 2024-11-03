@@ -1,3 +1,5 @@
+"./Core/Inc/uart_communication_fsm.o"
+"./Core/Src/command_parser_fsm.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f1xx_hal_msp.o"
 "./Core/Src/stm32f1xx_it.o"

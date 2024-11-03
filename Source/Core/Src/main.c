@@ -23,6 +23,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
+#include "command_parser_fsm.h"
+#include "uart_communication_fsm.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,15 +61,7 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t temp = 3;  // Biến lưu trữ dữ liệu nhận qua UART
 
-// Callback xử lý khi nhận dữ liệu qua UART hoàn tất
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
-    if (huart->Instance == USART2) {  // Kiểm tra xem instance có phải là USART2 không
-        HAL_UART_Transmit(&huart2, &temp, sizeof(temp), 50);  // Gửi lại dữ liệu vừa nhận
-        HAL_UART_Receive_IT(&huart2, &temp, 1);    // Chuẩn bị nhận byte tiếp theo qua ngắt
-    }
-}
 /* USER CODE END 0 */
 
 /**
@@ -106,13 +100,22 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  //HAL_UART_Receive_IT(&huart2, &temp, 1);  // Bắt đầu nhận dữ liệu qua UART với ngắt
+  HAL_UART_Receive_IT(&huart2, &temp, 1);  // Bắt đầu nhận dữ liệu qua UART với ngắt
   //uint32_t ADC_value=0;
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+	  if( buffer_flag == 1) {
+		  command_parser_fsm();
+		  buffer_flag = 0;
+	  }
+
+	  uart_communication_fsm();
+
+	  /*
 	  HAL_GPIO_TogglePin(YELLOW_LED_GPIO_Port, YELLOW_LED_Pin); // �?ổi trạng thái chân LED đ�?
 	  uint8_t TX[] = "LOVE YOU ";
 	  HAL_UART_Transmit(&huart2, TX, sizeof(TX), 1000);
@@ -132,6 +135,7 @@ int main(void)
 	  //ADC_value = HAL_ADC_GetValue (& hadc1 ) ;
 	  //HAL_UART_Transmit (& huart2 , ( void *) str , sprintf ( str , "%d\n", ADC_value ) , 1000) ;
 	  HAL_Delay(500);  // Ch�? 500ms để tạo hiệu ứng nhấp nháy
+	  */
   }
   /* USER CODE END 3 */
 }
