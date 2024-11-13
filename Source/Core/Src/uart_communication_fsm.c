@@ -29,7 +29,7 @@ void uart_communication_fsm() {
         case IDLE:
             // Kiểm tra nếu có lệnh yêu cầu !RST# từ người dùng
             if (command_flag == 1) {
-                if (string_compare((char *)command_data, "RST") == 0) {
+                if (string_compare((char *)command_data, "RTS") == 0) {
                     // Thiết lập lại cờ và chuyển sang trạng thái SEND_ADC
                     command_flag = 0;
                     uart_state = SEND_ADC;
