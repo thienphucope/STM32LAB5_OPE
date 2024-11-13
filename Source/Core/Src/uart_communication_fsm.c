@@ -29,8 +29,9 @@ void uart_communication_fsm() {
         case IDLE:
             // Kiểm tra nếu có lệnh yêu cầu !RST# từ người dùng
             if (command_flag == 1) {
-                if (string_compare((char *)command_data, "RTS") == 0) {
+                if (string_compare((char *)command_data, "!RTS#") == 0) {
                     // Thiết lập lại cờ và chuyển sang trạng thái SEND_ADC
+                	memset(command_data, 0, sizeof(command_data));
                     command_flag = 0;
                     uart_state = SEND_ADC;
                 }
@@ -58,7 +59,7 @@ void uart_communication_fsm() {
         case WAIT_OK:
             // Kiểm tra nếu nhận được lệnh !OK#
             if (command_flag == 1) {
-                if (string_compare((char *)command_data, "OK") == 0) {
+                if (string_compare((char *)command_data, "!OK#") == 0) {
                     // Thiết lập lại cờ và trở về trạng thái IDLE
                 	HAL_UART_Transmit(&huart2, (uint8_t*)"IDLE", 4, 50);
                 	HAL_UART_Transmit(&huart2, (uint8_t*)"\r\n", 2, 50);
